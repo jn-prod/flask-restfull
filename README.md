@@ -6,16 +6,20 @@
 
 Flask-RESTful provides the building blocks for creating a great REST API.
 
-## User Guide
+## Installation
+```
+pip install virtualenv
+virtualenv env -p python3
+. env/bin/activate
+pip install flask
+```
 
-You'll find the user guide and all documentation [here](https://flask-restful.readthedocs.io/)
+https://flask.palletsprojects.com/en/1.1.x/
 
 ## init
 
 ```
-virtualenv env -p python3
-. env/bin/activate
-pip install flask
+python run.py
 ```
 
 ## launch server
