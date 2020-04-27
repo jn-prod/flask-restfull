@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -25,8 +25,8 @@ jobs:
       - run:
           name: run tests
           command: |
-            docker image build -t fitter-happier-docker web
-            docker container run -d fitter-happier-docker python -m unittest discover web
+            docker image build -t flask-restfull server
+            docker container run -d flask-restfull python -m unittest discover server
 
       - store_artifacts:
           path: test-reports
@@ -41,11 +41,11 @@ jobs:
           name: Publish application to Docker Hub
           command: |
             docker login -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
-            docker image build -t fitter-happier-docker web
-            docker tag fitter-happier-docker $DOCKER_HUB_USER_ID/fitter-happier-docker:$CIRCLE_SHA1
-            docker tag fitter-happier-docker $DOCKER_HUB_USER_ID/fitter-happier-docker:latest
-            docker push $DOCKER_HUB_USER_ID/fitter-happier-docker:$CIRCLE_SHA1
-            docker push $DOCKER_HUB_USER_ID/fitter-happier-docker:latest
+            docker image build -t flask-restfull server
+            docker tag flask-restfull $DOCKER_HUB_USER_ID/flask-restfull:$CIRCLE_SHA1
+            docker tag flask-restfull $DOCKER_HUB_USER_ID/flask-restfull:latest
+            docker push $DOCKER_HUB_USER_ID/flask-restfull:$CIRCLE_SHA1
+            docker push $DOCKER_HUB_USER_ID/flask-restfull:latest
          
 workflows:
   version: 2
