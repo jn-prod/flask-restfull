@@ -71,7 +71,7 @@ Note: Mac and Windows users need this in order to power Docker containers. Once 
 Note:
 - Fig handles the building and running of multiple services. It makes it super easy to link services together running in different containers.
 - Once installed, test it out - `fig --version`
-- First, we build the image from the "web" directory and then mount that directory to the "code" directory within the Docker container. The Flask app is ran via the `python app.py` command. This exposes port 5000 on the container, which is forwarded to port 80 on the host environment.
+- First, we build the image from the "server" directory and then mount that directory to the "code" directory within the Docker container. The Flask app is ran via the `python app.py` command. This exposes port 5000 on the container, which is forwarded to port 80 on the host environment.
 - Next, the Redis service is built from the Docker Hub "Redis". Port 6379 is exposed and fowarded.
 
 ----
