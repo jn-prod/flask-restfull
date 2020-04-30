@@ -1,0 +1,22 @@
+{
+  "name": "flask-template",
+  "version": "1.0.0",
+  "description": "Flask dockerized  microservice ",
+  "main": "server/app.py",
+  "scripts": {
+    "server:stop": "docker-compose stop",
+    "server:build": "docker-compose build",
+    "server:dev": "docker-compose up",
+    "server:start": "docker-compose up -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jn-prod/flask-restfull.git"
+  },
+  "author": "Nicolas Jouanno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jn-prod/flask-restfull/issues"
+  },
+  "homepage": "https://github.com/jn-prod/flask-restfull#readme"
+}

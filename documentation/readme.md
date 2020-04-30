@@ -1,29 +1,3 @@
-![docker logo](images/docker-logo.jpg)
-
-### Fitter. Happier. More Productive.
-
-<hr>
-
-#### - Docker in Action -
-
-Note:
-- play radiohead song
-- Alright, we have a lot of material to cover so let's dive right in.
-
----
-
-## Joke
-
-<hr><br>
-
-### What did the hippie/yogi say when asked to get off the couch?
-
-----
-
-Namaste<br>(nah-I'm-a-stay)
-
----
-
 ## Workflow!
 
 <hr><br>
@@ -43,21 +17,7 @@ Note:
 
 # Part 1 - Local Setup
 
-----
-
-## Docker Setup
-
-<hr>
-
-Let's get Docker up and running!
-
-<br>
-
-Enter **Boot2Docker** - a *lightweigh*t Linux distribution designed specifically to run Docker ([Install](https://docs.docker.com/installation/mac/))
-
-Note: Mac and Windows users need this in order to power Docker containers. Once installed, test it out - `boot2docker version`
-
-----
+---
 
 ## Fig Up!
 
@@ -86,7 +46,7 @@ Note:
 
 Note:
 - This command builds an image for our Flask app, pulls the Redis image, and then starts everything up.
-- Now we can view our app in the browser by navigating to the address associated with the boot2docker VM - `boot2docker ip`.(Run 'docker-machine ip dev' to get the address.)
+- Now we can view our app in the browser by navigating to the address `localhost:PORT`.
 - At this point we've set up our local environent. Next, let's add CI into the mix.
 
 ---
@@ -147,18 +107,3 @@ Note:
 - Create PR
 - Merge
 - Check for new build
-
----
-
-
-## Conclusion
-
-<hr>
-
-- So, we went over a nice development workflow that included setting up a local environment coupled with continuous integration.
-- What about the final piece - delivering this app to the production environment? Make sure to check out the blog post @ [realpython.com](https://realpython.com) on 02/10/2015!
-- michael@realpython.com
-
-![heart](images/heart.jpg)
-
----

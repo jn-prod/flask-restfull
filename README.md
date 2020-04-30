@@ -5,6 +5,6 @@
 - Docker
 - CircleCI
 
-### Documentatiopn
+### Documentation
 
 [Follow me !](./documentation/readme.md)

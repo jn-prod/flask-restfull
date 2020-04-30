@@ -6,7 +6,7 @@ services:
         volumes:
             - ./server:/code
         ports:
-            - "80:5000"
+            - "5000:5000"
         links:
             - redis:redis
         command: python app.py
